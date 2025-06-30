@@ -8,8 +8,13 @@
 </head>
 <body>
   <header>
-    <h1>Fox Tail</h1>
-    <p>¡Descubre la aventura definitiva!</p>
+    <div class="header-content">
+      <img src="assets/Foxaguila.png" alt="Logo Fox Tail" class="logo">
+      <div>
+        <h1>Fox Tail</h1>
+        <p>¡Descubre la aventura definitiva!</p>
+      </div>
+    </div>
   </header>
   <nav>
     <a href="#galeria">Galería</a>
@@ -20,9 +25,9 @@
     <section id="galeria">
       <h2>Galería</h2>
       <div class="galeria">
-        <img src="assets/foto1.jpg" alt="Captura 1 del videojuego">
-        <img src="assets/foto2.jpg" alt="Captura 2 del videojuego">
-        <img src="assets/foto3.jpg" alt="Captura 3 del videojuego">
+        <img src="assets/Foxaguila.png" alt="Captura 1 del videojuego">
+        <img src="assets/Foxlevels.png" alt="Captura 2 del videojuego">
+        <img src="assets/FOxmovil.png" alt="Captura 3 del videojuego">
         <!-- Agrega más imágenes en la carpeta assets/ y aquí -->
       </div>
     </section>
@@ -34,11 +39,27 @@
     </section>
     <section id="contacto">
       <h2>Contacto</h2>
-      <p>¿Tienes dudas o quieres saber más? Escríbenos a <a href="mailto:contacto@foxtail.com">contacto@foxtail.com</a></p>
+      <form class="contact-form">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <textarea placeholder="Escribe tu mensaje..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <p class="contacto-mail">O escríbenos a <a href="mailto:contacto@foxtail.com">contacto@foxtail.com</a></p>
     </section>
   </main>
   <footer>
-    <p>&copy; 2025 Fox Tail. Todos los derechos reservados.</p>
+    <div class="footer-content">
+      <div>
+        <strong>Fox Tail</strong> &copy; 2025<br>
+        Todos los derechos reservados.
+      </div>
+      <div>
+        <a href="#galeria">Galería</a> |
+        <a href="#acerca">Acerca</a> |
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
   </footer>
   <script src="main.js"></script>
 </body>
